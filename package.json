@@ -31,7 +31,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "init-msw": "msw init public/",
-    "test-watch": "yarn test --watchAll"
+    "test-watch": "yarn test --watchAll",
+    "test-storybook": "test-storybook"
   },
   "eslintConfig": {
     "extends": [
@@ -67,17 +68,22 @@
     "@storybook/addon-essentials": "^6.5.7",
     "@storybook/addon-interactions": "^6.5.7",
     "@storybook/addon-links": "^6.5.7",
+    "@storybook/addon-storyshots": "^6.5.10",
     "@storybook/builder-webpack5": "^6.5.7",
     "@storybook/jest": "^0.0.10",
     "@storybook/manager-webpack5": "^6.5.7",
     "@storybook/node-logger": "^6.5.7",
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.7",
+    "@storybook/test-runner": "^0.7.1",
     "@storybook/testing-library": "^0.0.11",
     "babel-plugin-named-exports-order": "^0.0.2",
     "msw": "^0.42.0",
     "msw-storybook-addon": "^1.6.3",
     "prop-types": "^15.8.1",
     "webpack": "^5.73.0"
+  },
+  "resolutions": {
+    "react-test-renderer": "18.1.0"
   }
 }
